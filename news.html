@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>News</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style type="text/css">
+			nav {
+		
+		width: 100%;
+		line-height: 100%;
+		}
+		nav ul {
+		line-height: 60px;
+		list-style: none;
+		background: rgba(0, 0, 0, 0);
+		overflow: hidden;
+		color: #fff;
+		padding: 0;
+		text-align: right;
+		margin: 0;
+		padding-right: 40px;
+		transition: 1s;
+		}
+		nav.black ul {
+		background: #000;
+		}
+		nav ul li {
+		display: inline-block;
+		padding: 16px 40px;
+		;
+		}
+		nav ul li a {
+		text-decoration: none;
+		color: #fff;
+		font-size: 16px;
+		}
+		.menu-icon {
+		line-height: 60px;
+		width: 100%;
+		background: #000;
+		text-align: right;
+		box-sizing: border-box;
+		padding: 15px 24px;
+		cursor: pointer;
+		color: #fff;
+		display: none;
+		}
+		@media(max-width: 786px) {
+		.logo {
+		position: fixed;
+		top: 0;
+		margin-top: 16px;
+		}
+		nav ul {
+		max-height: 0px;
+		background: #000;
+		}
+		nav.black ul {
+		background: #000;
+		}
+		.showing {
+		max-height: 34em;
+		}
+		nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 24px;
+		text-align: center;
+		}
+		.menu-icon {
+		display: block;
+		}
+		}
+		/* Make the image fully responsive */
+		.carousel-inner img {
+		width: 100%;
+		}
+		.nav-text {
+		color: white;
+		font-size: 20px;
+		text-align: center;
+		margin-top: 20px;
+		
+		}
+		a {color:white; text-decoration: none;}
+		a:hover {text-decoration:none;color: yellow}
+		.bg-dark {
+		background-color: #000000 !important;
+		border:solid 3px #A61212 !important;
+		}
+		.btn-outline-light {
+		border:none;
+		background-color: #A61212
+		}
+		* {
+		box-sizing: border-box;
+		}
+		body {
+		background-color: #000 !important;
+		margin: 0;
+		font-family: Arial;
+		}
+		.header {
+		text-align: center;
+		padding: 32px;
+		}
+		.row {
+		display: -ms-flexbox; /* IE10 */
+		display: flex;
+		-ms-flex-wrap: wrap; /* IE10 */
+		flex-wrap: wrap;
+		padding: 0 4px;
+		}
+		/* Create four equal columns that sits next to each other */
+		.column {
+		-ms-flex: 25%; /* IE10 */
+		flex: 25%;
+		max-width: 25%;
+		padding: 0 4px;
+		}
+		.column img {
+		margin-top: 8px;
+		vertical-align: middle;
+		width: 100%;
+		}
+		/* Responsive layout - makes a two column-layout instead of four columns */
+		@media screen and (max-width: 800px) {
+		.column {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+		}
+		}
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+		.column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+		}
+		}
+
+		.btn-danger {
+			background-color: #A61212;
+			border: none;
+		}
+		</style>
+	</head>
+	<body>
+		<!--Main Navigation-->
+		<header>
+			<!-- Intro settings -->
+			<style>
+			#intro {
+			/* Margin to fix overlapping fixed navbar */
+			margin-top: 58px;
+			}
+			@media (max-width: 991px) {
+			#intro {
+			/* Margin to fix overlapping fixed navbar */
+			margin-top: 45px;
+			}
+			}
+			</style>
+			<!-- Navbar -->
+			<nav>
+				<div class="menu" style="z-index: 100;">
+					<div class="row my-2">
+						<div class="col-md-2 nav-text">
+							<a href="gallery.html"> Gallery</a>
+						</div>
+						<div class="col-md-2 nav-text">
+							<a href="story.html">Story</a>
+						</div>
+						<div class="col-md-4 nav-text"><a href="index.html"><img src="code images/20.png" style="width:28%; height: 100%; margin-top: -2vh;"></a></div>
+						<div class="col-md-2 nav-text">
+							<a href="merch.html">Merch</a>
+						</div>
+						<div class="col-md-2 nav-text">
+							<a href="news.html">News</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<!-- Navbar -->
+		</header>
+		<!--Main Navigation-->
+		<!--Main layout-->
+		<main class="my-5">
+			<div class="container">
+				<!--Section: News of the day-->
+				<section class="border-bottom pb-4 mb-5">
+					<div class="row gx-5">
+						<div class="col-md-6 mb-4">
+							<div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+								<img src="code images/c9.png" class="img-fluid" />
+								<a href="#!">
+									<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-6 mb-4">
+							<span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News of the day</span>
+							<h4 style="color: white"><strong>Stranger Things Season 5 Rumors About</strong></h4>
+							<p class="text-muted">
+								While Netflix is yet to confirm whether or not there will be a fifth season of Stranger Things, it seems as though a renewal is most definitely in the works. However, judging by comments made by members of the cast and the show's creators, Stranger Things isn't coming to an end anytime soon.
+							</p>
+							<button type="button" class="btn btn-danger">Read more</button>
+						</div>
+					</div>
+				</section>
+				<!--Section: News of the day-->
+				<!--Section: Content-->
+				<section>
+					<div class="row gx-lg-5">
+						<div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+							<!-- News block -->
+							<div>
+								<!-- Featured image -->
+								<div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
+									<img src="code images/c10.png" class="img-fluid" />
+									<a href="#!">
+										<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+									</a>
+								</div>
+								<!-- Article data -->
+								<div class="row mb-3">
+									<div class="col-6">
+										<a href="" class="text-info">
+											15.07.2020
+										</a>
+									</div>
+									<div class="col-6 text-end">
+										<u style="color: black"> 15.07.2020</u>
+									</div>
+								</div>
+								<!-- Article title and description -->
+								<a href="" class="text-dark">
+									<h5 style="color: white">What happens to Hopper in Season 3?</h5>
+									<p>
+										The main storyline in Season 3 revolved around a group of Russians who had made a machine that could open the gate to the Upside Down, which lies beneath Hawkins. While the kids were on a quest to stop Billy, the Mind Flayer, and the flayed residents of Hawkins, Hopper and Joyce took on a quest of their own: to stop the Russians.
+									</p>
+								</a>
+								<hr />
+								<!-- News -->
+								
+							</div>
+							<!-- News block -->
+						</div>
+						<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+							<!-- News block -->
+							<div>
+								<!-- Featured image -->
+								<div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4" data-mdb-ripple-color="light">
+									<img src="code images/c11.png" class="img-fluid" />
+									<a href="#!">
+										<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+									</a>
+								</div>
+								<!-- Article data -->
+								<div class="row mb-3">
+									<div class="col-6">
+										<a href="" class="text-danger">
+											15.07.2020
+										</a>
+									</div>
+									<div class="col-6 text-end">
+										<u style="color: black"> 20.12.2020</u>
+									</div>
+								</div>
+								<!-- Article title and description -->
+								<a href="" class="text-dark">
+									<h5 style="color: white">Stranger Things Stars Reunite at the SAG Awards</h5>
+									<p>
+										We can thank the Screen Actors Guild for giving us a Stranger Things reunion early into the year. Stars from the hit sci-fi Netflix series—including Millie Bobby Brown, Noah Schnapp, and Gaten Matarazzo—came together on the 2020 SAG Awards red carpet, looking all dressed up.
+									</p>
+								</a>
+								<hr />
+								<!-- News -->
+								
+								<!-- News -->
+								
+							</div>
+							<!-- News block -->
+						</div>
+						<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+							<!-- News block -->
+							<div>
+								<!-- Featured image -->
+								<div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4" data-mdb-ripple-color="light">
+									<img src="code images/c12.png" class="img-fluid" />
+									<a href="#!">
+										<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+									</a>
+								</div>
+								<!-- Article data -->
+								<div class="row mb-3">
+									<div class="col-6">
+										<a href="" class="text-warning">
+											24.04.2021
+										</a>
+									</div>
+									<div class="col-6 text-end">
+										<u style="color: black"> 15.07.2020</u>
+									</div>
+								</div>
+								<!-- Article title and description -->
+								<a href="" class="text-dark">
+									<h5 style="color: white">'Stranger Things' Star Maya Hawke Drops New Single</h5>
+									<p>
+										While Maya's parentage is well-known—Uma Thurman is her mom, and Ethan Hawke is her dad—the actress has talents outside her unforgettable role as Robin in Stranger Things. For one, she's of distant relation to Tennessee Williams.
+
+
+									</p>
+								</a>
+								<hr />
+								<!-- News -->
+								
+							</div>
+							<!-- News block -->
+						</div>
+					</div>
+				</section>
+				<!--Section: Content-->
+				<!-- Pagination -->
+			</div>
+		</main>
+		<!--Main layout-->
+		<!--Footer-->
+		<hr style="border: solid 1px red; width: 100vw !important;" />
+		<footer class="bg-dark text-center text-white my-5" style="width: 100vw !important; border: none !important">
+			<!-- Grid container -->
+			<div class="container p-4">
+				<!-- Section: Social media -->
+				<section class="mb-4">
+					<!-- Facebook -->
+					<a class="btn btn-outline-light btn-floating m-1 fa fa-facebook" href="https://www.facebook.com/StrangerThingsTV" role="button"
+						href="https://www.facebook.com/StrangerThingsTV"
+					></a>
+					<!-- Twitter -->
+					<a class="btn btn-outline-light btn-floating m-1 fa fa-twitter" href="https://twitter.com/stranger_things" role="button"
+					></a>
+					<!-- Google -->
+					<a class="btn btn-outline-light btn-floating m-1 fa fa-google" href="https://www.imdb.com/title/tt4574334/" role="button"
+					></a>
+					<!-- Instagram -->
+					<a class="btn btn-outline-light btn-floating m-1 fa fa-instagram" href="https://www.instagram.com/strangerthingstv/" role="button"
+						href="https://www.instagram.com/strangerthingstv/"
+					></a>
+					<!-- Linkedin -->
+					<a class="btn btn-outline-light btn-floating m-1 fa fa-linkedin" href="https://www.linkedin.com/posts/scottdresden_shortcut-learning-in-deep-neural-networks-activity-6736988008546922496-7yg2" role="button"
+					></a>
+					<!-- Github -->
+					<a class="btn btn-outline-light btn-floating m-1 fa fa-github" href="https://github.com/topics/stranger-things" role="button"
+					></a>
+				</section>
+				<!-- Section: Social media -->
+				<!-- Section: Form -->
+				<section class="">
+					<form action="">
+						<!--Grid row-->
+						<div class="row d-flex justify-content-center">
+							<!--Grid column-->
+							<div class="col-auto">
+								<p class="pt-2">
+									<strong>Sign up for our newsletter</strong>
+								</p>
+							</div>
+							<!--Grid column-->
+							<!--Grid column-->
+							<div class="col-md-5 col-12">
+								<!-- Email input -->
+								<div class="form-outline form-white mb-4">
+									<input type="email" id="form5Example2" class="form-control" />
+									<label class="form-label" for="form5Example2">Email address</label>
+								</div>
+							</div>
+							<!--Grid column-->
+							<!--Grid column-->
+							<div class="col-auto">
+								<!-- Submit button -->
+								<button type="submit" class="btn btn-outline-light mb-4">
+								Subscribe
+								</button>
+							</div>
+							<!--Grid column-->
+						</div>
+						<!--Grid row-->
+					</form>
+				</section>
+				<!-- Section: Form -->
+				<!-- Section: Text -->
+				<section class="mb-4">
+					<p>
+						Welcome! This website is an online encyclopedia about the Netflix original series STRANGER THINGS. The wiki currently has 473 articles and needs your help to grow!
+					</p>
+				</section>
+				<!-- Section: Text -->
+				
+				<!-- Section: Links -->
+			</div>
+			<!-- Grid container -->
+			<!-- Copyright -->
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+				© 2020 Stranger Things
+				
+			</div>
+			<!-- Copyright -->
+		</footer>
+		<!--Footer-->
+	</body>
+</html>
